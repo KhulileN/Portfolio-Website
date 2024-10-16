@@ -3,55 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khuli's Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image" href="./favicon.ico"
+    <title>My Portfolio - Khulile Nzimade</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <nav>
-        <ul><a>Home</a></ul>
-        <ul><a>Gallery</a></ul>
-        <ul><a>About Me</a></ul>
-    </nav>
-    <h1>My Portfolio</h1>
-    <h2>Authored by Khulz</h2>
-    <img src="https://th.bing.com/th/id/OIP.oji5u3tZ9wVkq34Q8JJ7HgAAAA?rs=1&pid=ImgDetMain">
-   <section>
-    <h3>Objective</h3>
-<p>I am a final year BSc IT student and I love coding.</p>
-</section>
-<hr>
-<section id="Education">
-    <article>
-    <h3>Education</h3>
-    <p>2022-2024</p>
-    <p>BSc IT Computer science and Business Management</p>
-</article>
-</section>
-<hr>
-<section>
-    <article><h3>Work Experience</h3></article>
-     <p>March 2021 - June 2021</p>
-     <p>A_STEP Tutor</p>
-   
-    <ul>
-        <li>Did a lot of explaining.</li>
-    </ul>
-</section>
-<hr>
-<section>
-    <article>
-    <h3>Technical Skills</h3>
-    <ul>
-        <li>Web Development</li>
-        <li>Data Structures</li>
-        <li>Software Design</li>
-    </ul>
-</article>
-</section>
-<footer>
-    
-</footer>
+    <!-- Header Section -->
+    <header>
+        <section class="container">
+            <h1>Khulile Nzimande</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </section>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <article class="container">
+            <h2>Hi, I'm Khulile</h2>
+            <img src="Headshot.jpg" alt="Khulile's Headshot">
+            <p>I am a final year Bachelor of Science in Information Technology majoring in Computer Science and Business Management with 
+                hands-on experience in software development.</p>
+                <p>Passionate about building innovative software solutions and learning new 
+                    technologies. Seeking to contribute to the tech space to support the growth and success of a high performing organization.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </article>
+    </section>
+
+    <!-- About Section -->
+    <article id="about" class="about">
+        <article class="container">
+            <h2>Education</h2>
+            <p>2022 - 2024</p>
+            <p>BSc IT Computer Science and Business Management | UFS | Bloemfontein, FS</p>
+            <p>Relevant Modules: Software Engineering, Web Development, Databases, Agile Methodologies, Data Structures and Algorithms</p>
+        </article>
+    </article>
+
+    <article id="about" class="about">
+        <article class="container">
+            <h2>Technical Skills</h2>
+            <p>Languages: C#, JavaScript, TypeScript, SQL </p>
+            <p>Frameworks: AngularJS, Angular, C# ASP.NET Web API, Entity Framework</p>
+            <p>Databases: SQL Server</p>
+            <p>Tools & Methodologies: Git, Agile, SDLC, Visual Studio, Azure DevOps </p>
+            <p>Other: Problem-Solving, Debugging, Team Collaboration</p>
+        </article>
+    </article>
+
+    <!-- Portfolio Section -->
+    <article id="portfolio" class="portfolio">
+        <section class="container">
+            <h2>My Projects</h2>
+            <section class="grid">
+                <article class="card">
+                    <img src="image.png" alt="Project 1">
+                    <h3>Multiplayer Rolling Ball Maze Simulation Game </h3>
+                    <p>Role: Collaborator | Technologies: Socket.IO, JavaScript </p>
+                    <ul>
+                        <li>Worked with a team to create a real-time multiplayer game using Socket.IO for communication between server and client.</li>
+                        <li>Developed efficient algorithms for handling multiple users, resulting in smooth gameplay.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <img src="ITSL Logo.jpg" alt="Project 2">
+                    <h3>Administration and Interactive System for ITSL</h3>
+                    <p>Role: Lead Developer | Technologies: Angular, C# ASP.NET, SQL Server</p>
+                    <ul>
+                        <li>Spearheaded the development of an interactive administration system for a university service-learning module.</li>
+                        <li>Integrated Angular for front-end functionality and C#, ASP.NET Web API for backend services.</li>
+                        <li>Implemented features to manage user feedback and administrative tasks.</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </article>
+
+    <!-- Contact Section -->
+    <article id="contact" class="contact">
+        <section class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <section class="container">
+            <p>&copy; 2024 Khulile Nzimande. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
