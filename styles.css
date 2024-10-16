@@ -1,0 +1,33 @@
+nav{
+    color: black;
+    background-color: plum ;
+    display: flex;
+    gap: 10em;
+}
+
+h1{
+    color:midnightblue;
+}
+h2{
+    color: mediumslateblue;
+}
+
+h3{
+    color:rgb(24, 18, 65);
+}
+
+img{
+   border: 2px;
+   width: 100px;
+   height: 100px;
+   width: 40%;
+   height: 40%;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+hr{
+    color: blue;
+}
