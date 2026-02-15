@@ -3,107 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Khulile Mbalenhle Nzimade</title>
+    <title>Khulile Nzimande | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
-        <section class="container">
-            <h1>Khulile Mbalenhle Nzimande</h1>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <section class="burger" id="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </section>
+        <nav class="navbar container">
+            <div class="logo">Khulile<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li> <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <article class="container">
-            <h2>Hi, I'm Khulile</h2>
-            <img src="Headshot.jpg" alt="Khulile's Headshot">
-            <p>I am a junior software developer with a major passion for building innovative software solutions and learning new 
-                    technologies. Seeking to contribute to the tech space to support the growth and success of a high performing organization.</p>
-            <a href="#portfolio" class="btn">View My Work</a>
-        </article>
+        <div class="container hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span> Available Immediately
+            </div>
+            <p class="greeting">Hi, I'm Khulile Nzimande</p>
+            <h1>I build scalable software & business solutions.</h1>
+            <p class="bio">
+                I am a <strong>Junior Software Developer</strong> based in Johannesburg. 
+                I bridge the gap between complex backend logic and user-friendly interfaces, specializing in 
+                <strong>Backend Development, Mobile Apps, and the Power Platform</strong>.
+            </p>
+            <div class="hero-btns">
+                <a href="#experience" class="btn primary-btn">View My Experience</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <article id="about" class="about">
-        <article class="container">
-            <h2>Education</h2>
-            <p>2022 - 2024</p>
-            <p>BSc IT Computer Science and Business Management | UFS | Bloemfontein, FS</p>
-            <p>Relevant Modules: Software Engineering, Web Development, Databases, Agile Methodologies, Data Structures and Algorithms</p>
-        </article>
-    </article>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">01. About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a detail-oriented developer with a passion for <strong>clean code</strong> and <strong>performance optimization</strong>. 
+                        My journey has taken me from academic excellence at UFS to delivering real-world projects under tight deadlines.
+                    </p>
+                    <p>
+                        Currently, I focus on creating custom business solutions and optimizing backend infrastructure. I thrive in collaborative teams and adapt quickly to new technologies.
+                    </p>
+                    <div class="education-box">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <p class="school">University of The Free State</p>
+                        <p class="degree">BSc IT Computer Science & Business Management</p>
+                        <p class="modules"><strong>Focus:</strong> Software Engineering, Agile, Data Structures.</p>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <div class="img-wrapper">
+                        <img src="Headshot.jpg" alt="Khulile Nzimande">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <article id="about" class="about">
-        <article class="container">
-            <h2>Technical Skills</h2>
-            <p>Languages: C#, JavaScript, TypeScript, SQL </p>
-            <p>Frameworks: AngularJS, Angular, C# ASP.NET Web API, Entity Framework</p>
-            <p>Databases: SQL Server</p>
-            <p>Tools & Methodologies: Git, Agile, SDLC, Visual Studio, Azure DevOps </p>
-            <p>Other: Problem-Solving, Debugging, Team Collaboration</p>
-        </article>
-    </article>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">02. Work Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <h3>Junior Software Developer</h3>
+                        <span class="company">SharePoint Systems</span>
+                        <span class="date">April 2025 - Present</span>
+                    </div>
+                    <div class="timeline-right">
+                        <ul class="job-description">
+                            <li>Design and develop custom business solutions using <strong>SharePoint, Power Apps, and Power Automate</strong> to streamline operations.</li>
+                            <li>Research and implement innovative tech fixes to drastically improve system performance and user experience.</li>
+                            <li>Collaborate on CMS website development projects (WordPress) and provide high-level technical customer support.</li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Power BI</span>
+                            <span>SharePoint</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Portfolio Section -->
-    <article id="portfolio" class="portfolio">
-        <section class="container">
-            <h2>My Projects</h2>
-            <section class="grid">
-                <article class="card">
-                    <img src="image.png" alt="Project 1">
-                    <h3>Multiplayer Rolling Ball Maze Simulation Game </h3>
-                    <p>Role: Collaborator | Technologies: Socket.IO, JavaScript </p>
-                    <ul>
-                        <li>Worked with a team to create a real-time multiplayer game using Socket.IO for communication between server and client.</li>
-                        <li>Developed efficient algorithms for handling multiple users, resulting in smooth gameplay.</li>
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <h3>Intern Software Engineer</h3>
+                        <span class="company">Blue PivotTV</span>
+                        <span class="date">Feb 2025 - April 2025</span>
+                    </div>
+                    <div class="timeline-right">
+                        <ul class="job-description">
+                            <li>Developed and optimized the backend of a mobile application for <strong>Android and iOS</strong>.</li>
+                            <li>Collaborated with a specialist AI team to enhance infrastructure scalability in a high-pressure environment.</li>
+                            <li>Achieved <strong>85%+ deadline adherence</strong> while contributing to the successful launch of the platform.</li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Mobile Dev</span>
+                            <span>Backend Optimization</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">03. Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Core Languages</h3>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>C#</span>
+                        <span>Python</span>
+                        <span>Kotlin (Basic)</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Tools</h3>
+                    <div class="tags">
+                        <span>React Native</span>
+                        <span>ASP.NET</span>
+                        <span>Socket.IO</span>
+                        <span>Power Platform</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & Concepts</h3>
+                    <div class="tags">
+                        <span>SQL & MySQL</span>
+                        <span>REST APIs</span>
+                        <span>Agile/Scrum</span>
+                        <span>TDD & SOLID</span>
+                        <span>SharePoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">04. Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <div class="card-header">
+                        <div class="folder-icon">
+                            <i class="far fa-folder"></i>
+                        </div>
+                        <div class="external-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>ITSL Admin System</h3>
+                    <p>Lead Developer for an interactive university administration system. Managed user feedback, administrative tasks, and database integration.</p>
+                    <ul class="tech-stack">
+                        <li>Angular</li>
+                        <li>C# ASP.NET</li>
+                        <li>SQL Server</li>
                     </ul>
                 </article>
-                <article class="card">
-                    <img src="ITSL Logo.jpg" alt="Project 2">
-                    <h3>Administration and Interactive System for ITSL</h3>
-                    <p>Role: Lead Developer | Technologies: Angular, C# ASP.NET, SQL Server</p>
-                    <ul>
-                        <li>Spearheaded the development of an interactive administration system for a university service-learning module.</li>
-                        <li>Integrated Angular for front-end functionality and C#, ASP.NET Web API for backend services.</li>
-                        <li>Implemented features to manage user feedback and administrative tasks.</li>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <div class="folder-icon">
+                            <i class="far fa-folder"></i>
+                        </div>
+                        <div class="external-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Multiplayer Maze Game</h3>
+                    <p>A real-time multiplayer simulation game. Implemented efficient algorithms for handling concurrent users and socket communication.</p>
+                    <ul class="tech-stack">
+                        <li>JavaScript</li>
+                        <li>Socket.IO</li>
+                        <li>HTML5 Canvas</li>
                     </ul>
                 </article>
-            </section>
-        </section>
-    </article>
 
-    <!-- Contact Section -->
-    <article id="contact" class="contact">
-        <section class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-    </article>
+                <article class="project-card">
+                    <div class="card-header">
+                        <div class="folder-icon">
+                            <i class="far fa-folder"></i>
+                        </div>
+                        <div class="external-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Mobile App Backend</h3>
+                    <p>Engineered the scalable backend infrastructure for a cross-platform mobile application, supporting high user loads.</p>
+                    <ul class="tech-stack">
+                        <li>Node.js/C#</li>
+                        <li>REST API</li>
+                        <li>Mobile Infra</li>
+                    </ul>
+                </article>
 
-    <!-- Footer -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <p class="subtitle">What's Next?</p>
+            <h2 class="big-heading">Let's Work Together</h2>
+            <p class="contact-text">
+                I am currently based in <strong>Johannesburg</strong> and available for new opportunities.
+                If you are looking for a developer who can handle both backend complexity and business solutions, let's chat.
+            </p>
+            <a href="mailto:khulilenzimande101@gmail.com" class="btn primary-btn email-btn">Say Hello</a>
+            
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="#" target="_blank"><i class="fab fa-github"></i></a> <a href="mailto:khulilenzimande101@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <section class="container">
-            <p>&copy; 2024 Khulile Nzimande. All rights reserved.</p>
-        </section>
+        <p>Designed & Built by Khulile Nzimande &copy; 2026</p>
     </footer>
 
     <script src="script.js"></script>
